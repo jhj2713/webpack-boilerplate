@@ -14,11 +14,11 @@ export default {
   module: {
     rules: [
       {
-        test: /\.s?[ac]ss/i,
+        test: /\.(css|scss|sass)/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif)/i,
         use: [
           {
             loader: "file-loader",
